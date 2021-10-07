@@ -1,6 +1,6 @@
 package basic.human2;
 
-public class Human {
+class Human {
     //フィールドの設定
     String name;
     int age;
@@ -10,5 +10,4 @@ public class Human {
         this.name = name;
         this.age = age;
     }
-
 }
