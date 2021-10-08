@@ -10,5 +10,6 @@ public class TypeConversion {
         //文字→数値
         String number ="12.34";
         double d2 = Double.parseDouble(number);
+        Double d3 = Double.valueOf(number);
     }
 }
