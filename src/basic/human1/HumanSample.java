@@ -5,6 +5,7 @@ class HumanSample {
         //変数の宣言（インスタンスの作成）
         Human human1 = new Human("Tom",28);
         Human human2 = new Human("Nancy",16);
+        Human human3 = new Human("John",10);
 
         //インスタンスの利用
         //値の取得
