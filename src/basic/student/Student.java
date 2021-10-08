@@ -38,10 +38,6 @@ class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", grade=" + grade +
-                '}';
+        return String.format("%d年 %s %s ",grade,name,gender);
     }
 }
