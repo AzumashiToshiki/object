@@ -1,4 +1,4 @@
-package basic.sample;
+package sample;
 
 public class OverLoadSample {
     static int sum(int num1,int num2) {
