@@ -1,9 +1,10 @@
 package basic.figure1;
 
+//長方形クラス
 class Rectangle {
     //フィールド
-    private double height;
-    private double width;
+    private double height;//高さ
+    private double width;//幅
 
     //コンストラクタ
     public Rectangle(double height, double width) {
@@ -24,7 +25,7 @@ class Rectangle {
      * 面積を求める getArea()
      * @return double 図形の面積
      */
-    public  double getArea() {
+    public double getArea() {
         return height * width;
     }
 
