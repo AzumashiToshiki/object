@@ -1,6 +1,6 @@
 package basic.human3;
 
-//継承
+//継承（スーパークラス）
 class Human {
     //フィールド
     protected String name;
@@ -10,6 +10,6 @@ class Human {
     }
 
     public void sayHello() {
-        System.out.println("Hello.I'm " + name);
+        System.out.println("Hello.I'm " + name + ".");
     }
 }
