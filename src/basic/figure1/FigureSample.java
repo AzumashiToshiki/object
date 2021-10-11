@@ -6,7 +6,7 @@ class FigureSample {
         //インスタンスの作成
         Rectangle r1 = new Rectangle(10,20);
         Triangle t1 = new Triangle(20,15);
-        Circle c1 = new Circle(8);
+        Circle c1 = new Circle(10);
 
         //出力
         System.out.println(r1);
