@@ -1,21 +1,17 @@
 package basic.figure1;
 
-import basic.figure3.IfGetArea;
-
 //図形の面積
 class FigureSample {
     public static void main(String[] args) {
         //インスタンスの作成
-        IfGetArea[] figures = {
-                new Rectangle(10,20),
-                new Triangle(20,15),
-                new Circle(10)
-        };
+        Rectangle r1 = new Rectangle(10,20);
+        Triangle t1 =new Triangle(20,15);
+        Circle c1 = new Circle(10);
 
         //出力
-        for (IfGetArea figure:figures) {
-            System.out.println(figure.getArea());
-            //System.out.println(figure);
-        }
+        System.out.println(r1);
+        System.out.println(t1);
+        System.out.println(c1);
+
     }
 }

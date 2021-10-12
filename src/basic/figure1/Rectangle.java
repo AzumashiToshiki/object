@@ -1,9 +1,7 @@
 package basic.figure1;
 
-import basic.figure3.IfGetArea;
-
 //長方形クラス
-class Rectangle implements IfGetArea {
+class Rectangle {
     //フィールド
     private double height;//高さ
     private double width;//幅
@@ -33,7 +31,6 @@ class Rectangle implements IfGetArea {
                 height,width,getArea());
     }
 
-    @Override
     public double getArea() {
         return height * width;
     }

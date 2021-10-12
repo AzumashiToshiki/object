@@ -1,9 +1,7 @@
 package basic.figure1;
 
-import basic.figure3.IfGetArea;
-
 //正円クラス
-class Circle implements IfGetArea {
+class Circle {
     //フィールド
     private double radius;//半径
 
@@ -17,7 +15,6 @@ class Circle implements IfGetArea {
         return radius;
     }
 
-    @Override
     public double getArea() {
         return Math.PI * Math.pow(radius,2);
     }

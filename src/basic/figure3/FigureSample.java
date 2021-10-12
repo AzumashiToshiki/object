@@ -12,8 +12,8 @@ class FigureSample {
 
         //出力
         for (IfGetArea figure:figures) {
-            System.out.println(figure.getArea());
-            //System.out.println(figure);
+            //System.out.println(figure.getArea());
+            System.out.println(figure);
         }
     }
 }

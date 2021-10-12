@@ -1,9 +1,7 @@
 package basic.figure1;
 
-import basic.figure3.IfGetArea;
-
 //三角形クラス
-class Triangle implements IfGetArea {
+class Triangle {
     //フィールド
     private double height;//高さ
     private double base;//底辺
@@ -31,7 +29,6 @@ class Triangle implements IfGetArea {
                 base,height,getArea());
     }
 
-    @Override
     public double getArea() {
         return base * height / 2.0;
     }
