@@ -1,6 +1,4 @@
-package basic.figure1;
-
-import basic.figure3.IfGetArea;
+package basic.figure3;
 
 //長方形クラス
 class Rectangle implements IfGetArea {

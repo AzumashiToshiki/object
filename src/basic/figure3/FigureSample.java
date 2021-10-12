@@ -1,6 +1,4 @@
-package basic.figure1;
-
-import basic.figure3.IfGetArea;
+package basic.figure3;
 
 //図形の面積
 class FigureSample {

@@ -9,5 +9,5 @@ abstract class Human {
         this.name = name;
     }
 
-    abstract public void sayHello();
+    public abstract void sayHello();
 }
