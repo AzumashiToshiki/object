@@ -2,6 +2,7 @@ package sample;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 //ArrayListのサンプル
@@ -47,5 +48,28 @@ class ArrayListSample {
         System.out.println(list);
 
         System.out.println(list.isEmpty());//true
+
+        //初期化
+        list.addAll(Arrays.asList(2,6,1,4,5,0,4));
+        System.out.println(list);
+
+        //値の検索
+        System.out.println(list.contains(6));//true
+        System.out.println(list.contains(10));//false
+        System.out.println(list.containsAll(Arrays.asList(1, 2, 4)));//true
+        System.out.println(list.containsAll(Arrays.asList(1, 2, 3)));//false
+
+        int num = 4;
+        if (list.contains(num)){
+            System.out.println(list.indexOf(num));//最初に見つけたインデックス
+            System.out.println(list.lastIndexOf(num));//最後に見つけたインデックス
+        }
+
+        //ソート
+        list.sort(Comparator.naturalOrder());
+        System.out.println(list);
+        list.sort(Comparator.reverseOrder());
+        System.out.println(list);
+
     }
 }
