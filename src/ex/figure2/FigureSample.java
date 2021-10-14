@@ -22,11 +22,4 @@ class FigureSample {
 
         }
     }
-
-        //出力
-        for (Figure figure:figures) {
-            System.out.println(figure.getArea());
-            //System.out.println(figure);
-        }
-    }
 }
