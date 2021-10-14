@@ -42,9 +42,6 @@ class ArrayListSample {
         //一部の要素の取得
         System.out.println(list.subList(1,3));
 
-        //配列への変換
-        Integer[] array = (Integer[]) list.toArray();
-
         //要素の消去
         list.clear();
         System.out.println(list);
