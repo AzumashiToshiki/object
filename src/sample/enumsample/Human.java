@@ -15,7 +15,7 @@ class Human {
     public String toString() {
         return "Human{" +
                 "name='" + name + '\'' +
-                ", gender=" + gender +
+                ", gender=" + gender.getJpName() +
                 ", age=" + age +
                 '}';
     }
