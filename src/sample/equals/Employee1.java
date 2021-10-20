@@ -3,11 +3,11 @@ package sample.equals;
 import java.util.Objects;
 
 //従業員
-class Employee {
+class Employee1 {
     private int id;
     private String name;
 
-    public Employee(int id, String name) {
+    public Employee1(int id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -24,8 +24,8 @@ class Employee {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
-        return id == employee.id && Objects.equals(name, employee.name);
+        Employee1 employee1 = (Employee1) o;
+        return id == employee1.id && Objects.equals(name, employee1.name);
     }
 
     @Override

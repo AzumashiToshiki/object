@@ -23,9 +23,9 @@ class Employee2 {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Employee2 employee = (Employee2) o;
-        return id == employee.id && Objects.equals(name, employee.name);
+        if (!(o instanceof Employee2)) return false;
+        Employee2 employee2 = (Employee2) o;
+        return id == employee2.id && Objects.equals(name, employee2.name);
     }
 
     @Override
