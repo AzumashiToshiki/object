@@ -1,26 +1,30 @@
-package sample.methods;
+package sample.equals;
 
 import java.util.Objects;
 
-class Employee implements Comparable<Employee>,Cloneable {
+//従業員
+class Employee2 {
     private int id;
     private String name;
 
-    @Override
-    public int compareTo(Employee o) {
-        return this.id - o.id;
+    public Employee2(int id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     @Override
-    protected Employee clone() throws CloneNotSupportedException {
-        return (Employee) super.clone();
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
+        Employee2 employee = (Employee2) o;
         return id == employee.id && Objects.equals(name, employee.name);
     }
 
