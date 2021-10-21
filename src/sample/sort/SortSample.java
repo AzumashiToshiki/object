@@ -8,7 +8,7 @@ import java.util.Comparator;
 import java.util.List;
 
 //Studentクラスを表示する処理
-class StudentSample {
+class SortSample {
     public static void main(String[] args) {
         //5名のインスタンスをArrayListで作成
         List<Student> students = new ArrayList<>();

@@ -4,6 +4,7 @@ interface IfTax {
     double TAX = 0.1;
     long getTaxIncludedPrice();
 }
+
 class Item implements IfTax {
     private String name;
     private int price;
