@@ -47,5 +47,12 @@ class SortSample {
         System.out.println("\n国語の降順→数学の降順→英語の降順");
         students.forEach(System.out::println);
 
+        students.sort(Comparator.naturalOrder());
+        System.out.println("\n合計点の昇順");
+        students.forEach(System.out::println);
+
+        students.sort(Comparator.reverseOrder());
+        System.out.println("\n合計点の降順");
+        students.forEach(System.out::println);
     }
 }

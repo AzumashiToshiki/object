@@ -3,7 +3,7 @@ package sample.sort;
 import sample.enumsample.Gender;
 
 //学生クラス
-class Student {
+class Student implements Comparable<Student> {
     //フィールド
     private String name;//名前
     private Gender gender;//性別
@@ -64,4 +64,8 @@ class Student {
     }
 
 
+    @Override
+    public int compareTo(Student o) {
+        return sum() - o.sum();//sum()が自身の合計点、o.sum()が比較対象の合計点
+    }
 }
