@@ -45,7 +45,7 @@ class Student implements Comparable<Student> {
      * テストの個人合計を求める
      * @return int 国語・数学・英語の合計点
      */
-    public int sum() {
+    public Integer sum() {
         return jap + math + eng;
     }
 
@@ -66,6 +66,6 @@ class Student implements Comparable<Student> {
 
     @Override
     public int compareTo(Student o) {
-        return sum() - o.sum();//sum()が自身の合計点、o.sum()が比較対象の合計点
+        return sum().compareTo(o.sum());
     }
 }
