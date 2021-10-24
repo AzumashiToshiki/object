@@ -1,4 +1,4 @@
-package basic.student;
+package basic.student1;
 
 class Student {
     //フィールド宣言
