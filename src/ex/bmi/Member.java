@@ -2,7 +2,7 @@ package ex.bmi;
 
 import sample.enumsample.Gender;
 
-class Member {
+public class Member {
     private String name;
     private Gender gender;
     private int age;
@@ -37,15 +37,11 @@ class Member {
         return weight;
     }
 
-    public double getBmi() {
-     return weight / Math.pow(height,2);
+    public double getBmi(){
+        return Math.round((weight / (height * height) * 10.0) / 10.0);
     }
 
-    public  double getAppweight() {
-        return Math.pow(height,2) * 22;
-    }
-
-    public String getBpdyShape() {
+    public String getBodyShape(){//体形
         double bmi = getBmi();
         if (bmi >= 40) {
             return "判定：肥満(4度)";
@@ -62,10 +58,12 @@ class Member {
         }
     }
 
+    public double getAppWeight(){//適正体重
+        return Math.round(height * height * 22 * 10.0) / 10.0;
+    }
 
     @Override
     public String toString() {
-        return String.format("%s %s %d %.2fm %.2fkg BMI:%.2f 標準:%.2fkg,%s",
-                name,gender.getJpName(),age,height,weight,getBmi(),getAppweight(),getBpdyShape());
+        return String.format("%s %s %d %.2fm %.2fkg BMI:%.2f %s 標準:%.2fkg",name,gender.getJpName(),age,height,weight,getBmi(),getBodyShape(),getAppWeight());
     }
 }
