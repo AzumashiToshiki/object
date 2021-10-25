@@ -65,7 +65,7 @@ class Member {
 
     @Override
     public String toString() {
-        return String.format("%s %s %d %.2f %.2f,%s",
-                name,gender.getJpName(),age,getBmi(),getAppweight(),getBpdyShape());
+        return String.format("%s %s %d %.2fm %.2fkg BMI:%.2f 標準:%.2fkg,%s",
+                name,gender.getJpName(),age,height,weight,getBmi(),getAppweight(),getBpdyShape());
     }
 }
