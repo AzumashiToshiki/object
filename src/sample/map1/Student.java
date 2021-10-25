@@ -1,10 +1,11 @@
-package ex.student2;
+package sample.map1;
 
 import sample.enumsample.Gender;
 
 //学生クラス
 class Student {
     //フィールド
+    private String group;//所属クラス
     private String name;//名前
     private Gender gender;//性別
     private int jap;//国語の得点
@@ -13,12 +14,18 @@ class Student {
 
     //コンストラクタ
 
-    public Student(String name, Gender gender, int jap, int math, int eng) {
+
+    public Student(String group, String name, Gender gender, int jap, int math, int eng) {
+        this.group = group;
         this.name = name;
         this.gender = gender;
         this.jap = jap;
         this.math = math;
         this.eng = eng;
+    }
+
+    public String getGroup() {
+        return group;
     }
 
     public String getName() {
