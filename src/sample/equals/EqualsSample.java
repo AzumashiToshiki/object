@@ -5,7 +5,6 @@ package sample.equals;
     Employee→Employee1に変更
     Employee2のequalsメソッドをサブクラスも等しいとするように変更
     Employee2のサブクラスEmployee3を追加
-
  */
 class EqualsSample {
     public static void main(String[] args) {
