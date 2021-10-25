@@ -41,11 +41,11 @@ class Member {
      return weight / Math.pow(height,2);
     }
 
-    public  double getAppweight() {
+    public double getAppweight() {
         return Math.pow(height,2) * 22;
     }
 
-    public String getBpdyShape() {
+    public String getBodyShape() {
         double bmi = getBmi();
         if (bmi >= 40) {
             return "判定：肥満(4度)";
@@ -66,6 +66,6 @@ class Member {
     @Override
     public String toString() {
         return String.format("%s %s %d %.2fm %.2fkg BMI:%.2f 標準:%.2fkg,%s",
-                name,gender.getJpName(),age,height,weight,getBmi(),getAppweight(),getBpdyShape());
+                name,gender.getJpName(),age,height,weight,getBmi(),getAppweight(),getBodyShape());
     }
 }
