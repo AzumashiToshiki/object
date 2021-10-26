@@ -38,18 +38,23 @@ class StudentMapSample {
                 //空のリストをセット
                 List<Student> list = new ArrayList<>();
                 list.add(student);
-                studentGroupMap.put(student.getGroup(),list);
+                studentGroupMap.put(student.getGroup(), list);
             }
         }
 
 
-        for(Map.Entry entry:studentGroupMap.entrySet()) {
-            List<Student> list = (List<Student>) entry.getValue();
-           for(Student student:list){
-               System.out.println(student);
-           }
+        for (Map.Entry entry : studentGroupMap.entrySet()) {
+            double sumJap = 0,sumMath = 0,sumEng = 0;
+            for (Student student:(List<Student>)entry.getValue()) {
+                sumJap += student.getJap();
+                sumMath += student.getMath();
+                sumEng += student.getEng();
+            }
+            double aveJap = sumJap /((List<Student>) entry.getValue()).size();
+            double aveMath = sumMath /((List<Student>) entry.getValue()).size();
+            double aveEng = sumEng / ((List<Student>) entry.getValue()).size();
+
+            System.out.println(String.format("%s %.2f %.2f %.2f",entry.getKey(),aveJap,aveMath,aveEng));
         }
     }
-
-
 }
