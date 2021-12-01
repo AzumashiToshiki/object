@@ -6,7 +6,7 @@ public enum Birthplace {
     OSAKA("大阪"),
     FUKUOKA("福岡");
 
-    private  String name;
+    private String name;
 
     Birthplace(String name) {
         this.name = name;
